@@ -12,31 +12,41 @@
 
 <cfsetting enablecfoutputonly="true">
 
+<cffunction name="writeToHTMLHead" access="public" output="false" returntype="void" 
+			hint="function to emulate cfhtmlhead behaviour for use within the cfscript">
+	<cfargument name="content" required="true" type="string">
+	
+	<cfhtmlhead text="#arguments.content#">
+
+</cffunction>
+
+<!--- Custom tag parameters --->
 <cfparam name="attributes.outputType" type="string" default="head">
 <cfparam name="attributes.src" type="string" default="">
 
 <cfscript>
 	if (not (thisTag.executionMode is "start")) {
-		
-		include "commonFunctions.cfm";
 
 		variables.content = Trim(thisTag.GeneratedContent);
-	
+
 		thisTag.GeneratedContent = "";
 		
-		if (not StructKeyExists(request, "dded_javascripts")) {
-			request.curaspan_apps_added_javascripts = {};
+		// check if added_javascript exists, if not then initialize
+		if (not StructKeyExists(request, "added_javascripts")) {
+			request.added_javascripts = {};
 		}
-	
+
+		// create script tag when src is given and file is not already included on page
 		if (Len(attributes.src) 
-				and not StructKeyExists(request.curaspan_apps_added_javascripts, attributes.src)) {
+				and not StructKeyExists(request.added_javascripts, attributes.src)) {
 	
 			variables.result = '<script type="text/javascript" src="#attributes.src#"></script>';
 			
-			request.curaspan_apps_added_javascripts[attributes.src] = true;
+			request.added_javascripts[attributes.src] = true;
 	
 		}
-	
+
+		// process inline javascript
 		if (len(variables.content)) {
 	
 			variables.bodyContent = Chr(13) & '//<![CDATA[' & Chr(13) & variables.content & Chr(13) & '//]]>' & Chr(13);
@@ -44,7 +54,8 @@
 			variables.result = '<script type="text/javascript">#variables.bodyContent#</script>';
 	
 		}
-	
+
+		// block to output the script content
 		if (attributes.outputType eq "append") {
 	
 			if (not structKeyExists(request, "htmlFooterScripts")) {

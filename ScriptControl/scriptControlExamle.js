@@ -1,3 +1,3 @@
-document.onload = function () {
-	alert("Hello");
+document.onclick = function () {
+	alert("External Javascript file loaded.");
 }
