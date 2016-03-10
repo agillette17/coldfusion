@@ -77,7 +77,7 @@ component accessors=true output=false persistent=false {
 	 * @hint I initialize and set base applicatio settings and services
 	 **/
 	void function loadApplication() {
-		application.basepath = "";
+		application.basepath = "/coldfusion";
 
 		application.logger = new model.utility.Logger("#this.name#_access");
 		
