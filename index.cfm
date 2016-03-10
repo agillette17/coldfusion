@@ -9,10 +9,10 @@
 		<h1>Welcome to Coldfusion Examples</h1>
 		<ul>
 			<li>
-				<a href="#APPLICATION.basepath#ReadLogs/">ReadLogs Example</a>
+				<a href="#APPLICATION.basepath#/ReadLogs/">Read Log Tool</a>
 			</li>
 			<li>
-				<a href="#APPLICATION.basepath#ScriptControl/">Javascript Custom Tag</a>
+				<a href="#APPLICATION.basepath#/ScriptControl/">Javascript Custom Tag</a>
 			</li>
 		</ul>
 	</body>

@@ -32,11 +32,12 @@
 		<body>
 			<h1>Logs</h1>
 			<div id="filelistContainer">
-				<table>
+				<table border="1" cellpadding="3" cellspacing="1">
 					<tr>
 						<th>Id</th>
 						<th>Log File Name</th>
 						<th>Last Modified Date</th>
+						<th>File Size</th>
 						<th>Action</th>
 					</tr>
 					<cfloop from="1" to="#ArrayLen(variables.logFilesArray)#" index="logFileIndex">
@@ -44,6 +45,7 @@
 							<td>#logFileIndex#</td>
 							<td>#variables.logFilesArray[logFileIndex].name#</td>
 							<td>#variables.logFilesArray[logFileIndex].lastModifiedDate# #variables.logFilesArray[logFileIndex].lastModifiedTime#</td>
+							<td>#variables.logFilesArray[logFileIndex].size#</td>
 							<td><a class="openLogFile" href="#APPLICATION.basepath#/ReadLogs/?filename=#variables.logFilesArray[logFileIndex].name#">Open</a></td>
 						</tr>
 					</cfloop>
@@ -52,7 +54,7 @@
 			<br /><br /><br />
 			<cfif ArrayLen(variables.logFileContent)>
 				<div id="fileContainer">
-					<table border="1">
+					<table border="1" cellpadding="3" cellspacing="1">
 						<tr>
 							<th>Id</th>
 							<th>Severity</th>
