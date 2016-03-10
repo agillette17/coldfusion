@@ -6,7 +6,7 @@
 		<title>Coldfusion Examples</title>
 	</head>
 	<body>
-		<h1>Welcome to Coldfusion Examples</h1>
+		<h1>Welcome to Coldfusion Tools, Utilities and Examples</h1>
 		<ul>
 			<li>
 				<a href="#APPLICATION.basepath#/ReadLogs/">Read Log Tool</a>
