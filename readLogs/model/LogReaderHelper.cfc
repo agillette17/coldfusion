@@ -4,7 +4,7 @@
  * @author Vipin Malik
  * @date 3/10/16
  **/
-component accessors=true output=false persistent=false {
+component accessors=false output=false persistent=false {
 	
 	public LogReaderHelper function init () {
 		variables.rootPath = Server.ColdFusion.RootDir;
@@ -38,13 +38,26 @@ component accessors=true output=false persistent=false {
 		return queryToArray(sortedLogFiles.execute().getResult());
 	}
 
-	public array function getLogContent (String logFilePath) {
+	public array function getLogContent (required string logFilePath,
+											array severity=[]) {
 		var logContent = fileRead(variables.logDirectoryPath & "/" & arguments.logFilePath);
 		
 		var logsAsQuery = logStringToQuery(logContent);
+		
+		var filterQuery = "select Severity, ThreadID, LogDate, LogTime, Application, Message from logsAsQuery order by LogDateTime desc";
 
+		if (ArrayLen(arguments.severity)) {
+			var severityArray = [];
+
+			for (i in arguments.severity) {
+				ArrayAppend(severityArray, "'" & i & "'");				
+			}
+
+			var filterQuery = "select Severity, ThreadID, LogDate, LogTime, Application, Message from logsAsQuery where severity in (#ArrayToList(severityArray)#) order by LogDateTime desc";
+		}
+		
 		var sortedLogQuery =  new Query(
-			sql = "select Severity, ThreadID, LogDate, LogTime, Application, Message from logsAsQuery order by LogDateTime desc",
+			sql = filterQuery,
 			dbtype = "query",
 			logsAsQuery = logsAsQuery
 		);
@@ -93,7 +106,7 @@ component accessors=true output=false persistent=false {
 				QuerySetCell(logQry, "LogTime", logItemArray[4]);
 				QuerySetCell(logQry, "Application", logItemArray[5]);
 				QuerySetCell(logQry, "Message", logItemArray[6]);
-				QuerySetCell(logQry, "logDateTime", logItemArray[3] & " " & logItemArray[4]);	
+				QuerySetCell(logQry, "logDateTime", logItemArray[3] & " " & logItemArray[4]);
 			}
 		}
 
