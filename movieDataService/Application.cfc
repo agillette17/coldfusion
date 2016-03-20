@@ -5,14 +5,14 @@
  * @date 3/8/16
  **/
 component accessors=true output=false persistent=false {
-	this.name = "vipinmalik_coldfusion";
+	this.name = "movieDataService";
 	this.sessionManagement = true;
 	this.applicationTimeout = "#CreateTimespan(1,0,0,0)#";
 	this.sessionTimeout = "#CreateTimeSpan(0,0,30,0)#";
 	this.setClientCookie = false;
 
 	this.mappings["/Coldfusion"] = "N:/Projects/Coldfusion/";
-
+	
 	/**
 	 * @hint I handle application initialization, I runs when application is first called.
 	 **/
@@ -83,7 +83,7 @@ component accessors=true output=false persistent=false {
 	void function loadApplication() {
 		application.basepath = "/coldfusion";
 
-		application.logger = new Coldfusion.model.utility.Logger("#this.name#_errors");
+		application.logger = new Coldfusion.model.utility.Logger("#this.name#_access");
 
 		application.isLoaded = true;
 	}

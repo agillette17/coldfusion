@@ -5,7 +5,7 @@
  * @date 3/8/16
  **/
 component accessors=true output=false persistent=false {
-	this.name = "vipinmalik_coldfusion";
+	this.name = "vipinmalik_logReader";
 	this.sessionManagement = true;
 	this.applicationTimeout = "#CreateTimespan(1,0,0,0)#";
 	this.sessionTimeout = "#CreateTimeSpan(0,0,30,0)#";
@@ -22,7 +22,7 @@ component accessors=true output=false persistent=false {
 		// log application init
 		application.logger.logMessage(type = "Information", 
 										message = "Application Started");
-		
+
 		return true;
 	}
 	
@@ -81,9 +81,9 @@ component accessors=true output=false persistent=false {
 	 * @hint I initialize and set base applicatio settings and services
 	 **/
 	void function loadApplication() {
-		application.basepath = "/coldfusion";
+		application.basepath = "/coldfusion/readLogs";
 
-		application.logger = new Coldfusion.model.utility.Logger("#this.name#_errors");
+		application.logger = new Coldfusion.model.utility.Logger("#this.name#_access");
 
 		application.isLoaded = true;
 	}

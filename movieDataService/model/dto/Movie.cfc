@@ -13,17 +13,20 @@ component accessors=true output=false persistent=false extends="baseDTO" {
 	property numeric yearOfRelease;
 	property string director;
 	property array actors;
+	property struct finance;
 	
 	public movie function init (numeric id=0,
 									required string title,
 									required numeric yearOfRelease,
 									string director="",
-									array actors=[]) {
+									array actors=[],
+									struct finance={}) {
 		setId(arguments.id);
 		setTitle(arguments.title);
 		setYearOfRelease(arguments.yearOfRelease);
 		setDirector(arguments.director);
 		setActors(arguments.actors);
+		setFinance(arguments.finance);
 
 		return this;
 	}

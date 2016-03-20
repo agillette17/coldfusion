@@ -1,6 +1,5 @@
-<cfset movie1 = new movie(title="The Revenant", yearOfRelease="2015", actors=["Leonardo DeCaprio", "Tom Hardy"])>
+<cfhttp method="get" result="result" url="http://vipinmalik.com/rest/restService/movieDataService/1.json">
+	<cfhttpparam type="header" name="Accept" value="application/json">
+</cfhttp>
 
-<cfset movie2 = new movie(title="There Will Be Blood", yearOfRelease="2007", actors=["Danielle DeLewis"])>
-
-<cfdump var="#movie1.areEqual(movie2)#">
-
+<cfdump var="#result#">
