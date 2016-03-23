@@ -14,6 +14,9 @@
 			<li>
 				<a href="#APPLICATION.basepath#/ScriptControl/">Javascript Custom Tag</a>
 			</li>
+			<li>
+				<a href="#APPLICATION.basepath#/PlayWithValidation/">Play With Validations using isValid()</a>
+			</li>
 		</ul>
 	</body>
 </html>
