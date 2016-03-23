@@ -25,14 +25,14 @@
 			
 			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 				<div class="panel panel-info">
-					<div class="panel-heading" role="tab" id="heading4">
+					<div class="panel-heading" role="tab" id="heading9">
 						<h4 class="panel-title">
-							<a role="button" data-toggle="collapse" data-parent="##accordion" href="##collapse4" aria-expanded="false" aria-controls="collapse4">
+							<a role="button" data-toggle="collapse" data-parent="##accordion" href="##collapse9" aria-expanded="false" aria-controls="collapse9">
 								Test for a component
 							</a>
 						</h4>
 					</div>
-					<div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">	
+					<div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading9">
 						<div class="panel-body">
 							<div class="col-xs-12 well">
 								<code>
