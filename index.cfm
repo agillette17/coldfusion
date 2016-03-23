@@ -17,6 +17,9 @@
 			<li>
 				<a href="#APPLICATION.basepath#/PlayWithValidation/">Play With Validations using isValid()</a>
 			</li>
+			<li>
+				<a href="#APPLICATION.basepath#/OnlineConsole/">Online Console</a>
+			</li>
 		</ul>
 	</body>
 </html>
