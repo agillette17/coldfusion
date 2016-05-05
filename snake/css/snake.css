@@ -1,0 +1,28 @@
+.gameContainer {
+	width: 410px;
+	height: 410px;
+	border: solid 5px;
+	background-color: #e4e4e4;
+	position:absolute;
+}
+
+.name {
+	width: 288px;
+    margin: 60px auto;
+}
+
+.actionContainer {
+	width: 160px;
+	margin: 40px auto 0 auto;	
+}
+
+.actionContainer .btn-primary{
+	background-color: #e4e4e4;
+	border-color: #e4e4e4;
+}
+
+.snake {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+}

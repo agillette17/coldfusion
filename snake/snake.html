@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Snake</title>
+		
+		<!-- Bootstrap -->
+		<link href="/coldfusion/assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+		<link href="/coldfusion/other/css/snake.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<h1>Snake - The Game</h1>
+			<!--- <div id="game" class="gameContainer">
+				<div class="name">
+					<img src="image/snaky.png">
+				</div>
+				<div class="actionContainer">
+					<button type="button" name="start" class="btn btn-primary"><img src="image/start.png"></button>
+				</div>
+			</div> --->
+			<div id="game" class="gameContainer">
+				<div class="snake" id="snake-head">
+					<img src="image/snake-face.png" width="20px" height="20px">
+				</div>
+				<div class="snakeTail">
+					<img src="image/snake-tail.png">
+				</div>
+				<div class="food">
+					<img src="image/snake-food.png">
+				</div>
+			</div>
+		</div>
+		
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="/coldfusion/assets/jquery/js/jquery-2.2.2.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="/coldfusion/assets/bootstrap/js/bootstrap.js"></script>
+		<!-- Include game implementation javascript -->
+		<script src="/coldfusion/other/Javascript/snake.js"></script>
+	</body>
+</html>
