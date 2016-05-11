@@ -7,6 +7,7 @@ var snakeElement = {"direction" = "left",
 					position = {"X" = 0, "Y" = 0}
 					};
 
+
 $(document).ready(
 		function () {
 			// initial direction

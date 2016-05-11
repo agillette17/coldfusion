@@ -1,0 +1,15 @@
+<cfscript>
+	variables.appBasePath = "";
+	
+	variables.googleMapKey = "";
+	
+	variables.defaultDatasource = "";
+	
+	variables.defaultAntiSamyPolicyFile = "";
+	
+	variables.MySQLConnectionURL = "";
+	
+	variables.MySQLUsername = "";
+	
+	variables.MySQLPassword = "";
+</cfscript>

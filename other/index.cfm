@@ -1,9 +1,6 @@
 <cfscript>
-	/**
-	* @validate numeric
-	* */
-	myStruct = {key1 = "value1", key2 = "value2"};
+	app = new Coldfusion.Application();
 	
-	writedump(getMetadata(myStruct).getAnnotations());
+	writedump(app);
 
 </cfscript>
