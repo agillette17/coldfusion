@@ -317,9 +317,11 @@ component accessors=true output=false persistent=false {
 	 // Following properties are available in CF2016+
 	
 	/**
-	 * TODO
+	 * Enable this to pass array by reference to UDF's
+	 * It increases speed of UDF's execution
+	 * TODO :: Why
 	 **/
-	//this.passArrayByReference = false
+	this.passArrayByReference = true
 	
 	/**
 	 * TODO

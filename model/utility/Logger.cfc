@@ -1,6 +1,6 @@
 /**
  * Logger
- * Provides functionality related to logging activity
+ * @description Provides functionality related to logging activity
  * @author Vipin Malik
  * @date 3/8/16
  **/
