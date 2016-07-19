@@ -2,6 +2,7 @@
 	<cfsilent>
 		<cfscript>
 			variables.pathToJavascriptFile = "scriptControlExamle.js";
+			variables.test  = "y";
 		</cfscript>
 	</cfsilent>
 	<cfoutput>
@@ -13,6 +14,7 @@
 			</head>
 			<body>
 				<h1>Javascript Custom Tag Usage</h1>
+
 				<!--- Render external javascript file in the head section of page --->
 				<cf_script src="#variables.pathToJavascriptFile#" outputType="append" />
 

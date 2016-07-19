@@ -1,6 +1,6 @@
-<h3>cfmap Example using latitude and longitude attributes</h3> 
+<h3>cfmap Example using address</h3> 
 <cfmap name="gmap01"
-	centeraddress="Metro Station, Patel Nagar, New Delhi"
+	centeraddress="#url.address#"
     doubleclickzoom="true" 
     overview="true" 
     scrollwheelzoom="true" 

@@ -1,5 +1,4 @@
 <cfsetting enablecfoutputonly="true">
-
 <cfoutput>
 <html>
 	<head>
@@ -9,10 +8,10 @@
 		<h1>Welcome to Coldfusion Tools, Utilities and Examples</h1>
 		<ul>
 			<li>
-				<a href="#APPLICATION.basepath#/ReadLogs/">Read Log Tool</a>
+				<a href="#APPLICATION.basepath#/ReadLogs/" title="<b>Read Log Tool</b>"><b>Read Log Tool</b></a>
 			</li>
 			<li>
-				<a href="#APPLICATION.basepath#/ScriptControl/">Javascript Custom Tag</a>
+				<a href="#APPLICATION.basepath#/ScriptControl/" title="1)&##009;A&##013;&##010;2)&##009;B">Javascript Custom Tag</a>
 			</li>
 			<li>
 				<a href="#APPLICATION.basepath#/PlayWithValidation/">Play With Validations using isValid()</a>

@@ -10,6 +10,10 @@ component accessors=false output=false persistent=false {
 		variables.rootPath = Server.ColdFusion.RootDir;
 
 		variables.logDirectoryPath = ReReplace("#variables.rootPath#/logs", "\\", "/", "all");
+
+		if (not directoryExists(variables.logDirectoryPath)) {
+			variables.logDirectoryPath = ReReplace("#variables.rootPath#\WEB-INF\lucee\logs", "\\", "/", "all");
+		}
 		
 		return this;
 	}
@@ -23,7 +27,7 @@ component accessors=false output=false persistent=false {
 		var sortedLogFiles = new Query(
 			sql = "select 
 						Cast(DateLastModified AS DATE) lastModifiedDate,  
-						Cast(DateLastModified AS TIME) lastModifiedTime, 
+						Cast(DateLastModified AS DATE) lastModifiedTime, 
 						name, 
 						size
 					from 

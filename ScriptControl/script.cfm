@@ -30,7 +30,7 @@
 		variables.content = Trim(thisTag.GeneratedContent);
 
 		thisTag.GeneratedContent = "";
-		
+
 		// check if added_javascript exists, if not then initialize
 		if (not StructKeyExists(request, "added_javascripts")) {
 			request.added_javascripts = {};

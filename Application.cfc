@@ -321,7 +321,7 @@ component accessors=true output=false persistent=false {
 	 * It increases speed of UDF's execution
 	 * TODO :: Why
 	 **/
-	this.passArrayByReference = true
+	this.passArrayByReference = true;
 	
 	/**
 	 * TODO

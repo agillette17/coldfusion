@@ -10,7 +10,7 @@
 
 <cfsilent>
 	<cfscript>
-		variables.logReaderHelper = new model.LogReaderHelper();
+		variables.logReaderHelper = new com.LogReaderHelper();
 		
 		variables.logFilesArray = variables.logReaderHelper.getSortedLogFileList();
 		
@@ -76,19 +76,19 @@
 								<td>#variables.logFilesArray[logFileIndex].name#</td>
 								<td>#variables.logFilesArray[logFileIndex].lastModifiedDate# #variables.logFilesArray[logFileIndex].lastModifiedTime#</td>
 								<td>#variables.logFilesArray[logFileIndex].size#</td>
-								<td><a class="openLogFile" href="#APPLICATION.basepath#/ReadLogs/?filename=#variables.logFilesArray[logFileIndex].name#">Open</a></td>
+								<td><a class="openLogFile" href="#APPLICATION.basepath#/?filename=#variables.logFilesArray[logFileIndex].name#">Open</a></td>
 							</tr>
 						</cfloop>
 					</table>
 				</div>
 			<cfelse>
 				<h3>Logs from #variables.filename#</h3>
-				<a class="back" href="#APPLICATION.basepath#/ReadLogs/">Back</a>
+				<a class="back" href="#APPLICATION.basepath#/">Back</a>
 			</cfif>
 			<br /><br />
 			<cfif ArrayLen(variables.logFileContent)>
 				<div id="filterFormContainer">
-					<form name="filterForm" action="#APPLICATION.basepath#/ReadLogs/" method="post">
+					<form name="filterForm" action="#APPLICATION.basepath#/" method="post">
 						<div class="filterItem">
 							<div class="filterItemLabel">
 								Log Level :
