@@ -1,0 +1,802 @@
+@charset "utf-8";
+div .printScreen {
+	width:90%;
+	height:auto;
+	border-top:solid 2px #1d5176;
+	margin:30px auto;
+	background:#fff;
+	-webkit-box-shadow: 0px 11px 30px -10px rgba(191,191,191,1);
+	-moz-box-shadow: 0px 11px 30px -10px rgba(191,191,191,1);
+	box-shadow: 0px 11px 30px -10px rgba(191,191,191,1);
+}
+
+.printScreen .clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.printScreen #wrapper-div {
+	width:1125px;
+	margin:0 auto;
+}
+
+/*Header Section ================ ================================= ======== ======== ===================*/
+
+.printScreen .header-col {
+	padding-top:40px;
+}
+
+.printScreen  .header-col .top-col {
+	width:100%;
+	padding-bottom:20px;
+	border-bottom:solid 2px #d22d2d;
+}
+.printScreen .header-col .top-col ul.sub-logos {
+	list-style:none;
+	margin:0;
+	padding:0;
+	float:right;
+}
+.printScreen .header-col .top-col ul.sub-logos li {
+	display:inline-block;
+	font-size:11px;
+	color:#1e5075;
+ 
+}
+.printScreen .header-col .filter-col {
+	border:solid 1px #00aeef;
+	padding:15px 0;
+	margin :15px 0 30px;
+	position:relative;
+}
+.printScreen .header-col .filter-col ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+.printScreen .header-col .filter-col ul li {
+	display:inline;
+	font-weight:bold;
+	margin-left:41px;
+	
+}
+.printScreen .header-col .filter-col::before {
+	content:"";
+	width:86px;
+	height:18px;
+	background:url(/cmnimages/sprite002.png) no-repeat -56px -171px;
+	position:absolute;
+	left:-9px;
+	top:-11px;
+	
+	}
+.printScreen  .header-col .filter-col ul li:first-child {
+	margin-left:15px;
+}
+.printScreen .header-col .filter-col ul li span {
+	font-weight:normal;
+	margin-left:10px;
+}
+.printScreen ul.sub-logos li.kimco span {	
+	width:142px;
+	height:34px;
+	background:url(/cmnimages/sprite002.png) no-repeat 0 5px;
+	display:inline-block;
+	position:relative;
+	top:12px;
+	margin-left:5px;
+}
+.printScreen ul.sub-logos li.kimco { margin-right:45px;}
+.printScreen ul.sub-logos li.creditntell span {	
+	width:88px;
+	height:25px;
+	background:url(/cmnimages/sprite002.png) no-repeat 0 -39px;
+	display:inline-block;
+	position:relative;
+	top:5px;
+	margin-left:5px;
+}
+.printScreen ul.sub-logos li.creditntell {
+	position:relative;
+	padding-right:7px;
+	
+}
+.printScreen ul.sub-logos li.creditntell::before {
+	content:"";
+	width:1px;
+	height:20px;
+	background:#000;
+	position:absolute;
+	right:0;
+	top:10px;
+}
+.printScreen ul.sub-logos li.fdreports span {	
+	width:62px;
+	height:25px;
+	background:url(/cmnimages/sprite002.png) no-repeat 0 -80px;
+	display:inline-block;
+	position:relative;
+	top:6px;
+	margin-left:3px;
+	
+}
+.printScreen .header-col .top-col .logo {
+	width:239px;
+	height:35px;
+	background:url(/cmnimages/logo.png) no-repeat 0 0;
+	display:block;
+	float:left;
+}
+.printScreen .header-col .sub-line {
+	font-size:21px;
+	color:#363636;
+	line-height:40px;
+	float:left;
+}
+.printScreen .bottom-col ul {
+	list-style:none;
+	padding:0;
+	margin:10px 0 0;
+	width:520px;
+	float:right;
+	border-left:solid 2px #1e5075;
+	padding-left:10px;
+}
+.printScreen .bottom-col ul li {
+	display:inline-block;
+	width:150px;
+	padding-left:20px;
+	margin-bottom:10px;
+	position:relative;
+}
+.printScreen .bottom-col ul li i {
+    font-size: 23px;
+    left: 0px;
+    position: absolute;
+    top: 1px;
+}
+.printScreen .bottom-col ul li i.bl {color:#3e50b4;}
+.printScreen .bottom-col ul li i.gr {color:#8cc34b;}
+.printScreen .bottom-col ul li i.orange {color:#ff9f02;}
+.printScreen .bottom-col ul li i.mer {color:#fe5723;}
+.printScreen .bottom-col ul li i.vilot {color:#9b26af;}
+
+
+
+/*Map Section styles ================ ================================= ======== ======== ===================*/
+
+
+.printScreen .map-col {
+	 
+	background:#fff;
+	padding:5px;
+	-webkit-box-shadow: 1px 1px 10px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 10px -4px rgba(0,0,0,0.75);
+box-shadow: 1px 1px 10px -4px rgba(0,0,0,0.75);
+margin-bottom:20px;
+position:relative;
+}
+.printScreen .map-col .google-logo {
+	width:92px;
+	height:31px;
+	background:url(/cmnimages/sprite002.png) no-repeat 0 -231px;
+	position:absolute;
+	top:25px;
+	left:30px;
+}
+.printScreen .map-col img {
+	width:100%;
+	height:auto;
+	display:block;
+}
+
+
+/*Snapshot mile tabular data styles ================ ================================= ======== ======== ===================*/
+.printScreen .snapshot-logo {
+	width:125px;
+	height:23px;
+	background:url(/cmnimages/sprite002.png) no-repeat 0 -116px;
+	display:block;
+	margin-bottom:10px;
+}
+.printScreen .data-miles {
+	margin-bottom:30px;
+}
+.printScreen .data-miles table tr td,
+.printScreen .data-miles table tr th{
+	padding:5px 20px;
+}
+.printScreen .data-miles table tr th {
+	font-weight:bold;
+	color:#00bff3;
+}
+.printScreen .data-miles table tr th:first-child {
+	padding-left:0;
+}
+.printScreen .data-miles table tr td {
+	font-size:16px;
+	font-weight:bold;
+	color:#1d5176;
+}
+.printScreen .data-miles table tr td:first-child {
+	font-weight:normal;
+	font-size:16px;
+	color:#363636;
+	padding-left:0;
+}
+
+
+
+/* 3 Mile data styles ================ ================================= ======== ======== ===================*/
+.printScreen .data-col {
+	margin-bottom:30px;
+}
+.printScreen .data-col h3 {
+	font-size:21px;
+	color:#1e5075;
+	margin-bottom:0px;
+}
+.printScreen .data-col h3 span {
+    background: #1e5075 none repeat scroll 0 0;
+    display: inline-block;
+    float: right;
+    height: 1px;
+    position: relative;
+    top: 12px;
+    width: 85%;
+}
+.printScreen .col-3 {
+	width:30%;
+	float:left;
+	padding-left:3%;
+}
+.printScreen .col-3 h4 {
+	font-weight:normal;
+	color:#363636;
+	position:relative;
+	 
+	background:#fff;
+	margin-bottom:10px;
+	
+}
+
+.printScreen .col-3 ul {
+	list-style:none;
+	padding:0 0 0 10px;
+	clear:both;
+}
+
+.subList{
+	padding-left:10px;
+}
+.printScreen .col-3 ul li {
+	font-size:12px;
+	display:block;
+	clear:both;
+	color:#686868;
+}
+.printScreen .col-3 ul li span.left-col {
+	width:50%;
+	display:inline-block;
+	position:relative;
+}
+.printScreen .col-3 ul li  .right-col {
+	width:44%;
+	float:right;
+}
+.printScreen .col-3 ul li div {
+	display:inline-block;
+	widows:39%;
+}
+.printScreen .col-3 ul li  .right-col span.percentage-v {
+	float:right;
+	width:36%;
+}
+.printScreen .graph-col {
+	width:60%;
+	float:left;
+}
+.printScreen .graph-line {
+	width:100%;
+	height:7px;
+	background:#f00;
+	display:inline-block;
+	float:right;
+	position:relative;top:4px;
+}
+.printScreen .graph-line.blue {
+	background:#24c8f5;
+	width:35%;
+}
+.printScreen .graph-line.orange {
+	background:#f89424;
+	width:38%;
+}
+.printScreen .graph-line.viol {
+	background:#9c27b0;
+	width:70%;
+}
+.printScreen .graph-line.green{
+	background:#89dd37;
+	width:65%;
+}
+.printScreen .graph-line.brown{
+	background:#795548;
+	width:60%;
+}
+.printScreen .graph-line.grey{
+	background:#607d8b;
+	width:56%;
+}
+.printScreen .graph-line.yellow{
+	background:#ffc107;
+	width:58%;
+}
+.printScreen .graph-line.n-blue{
+	background:#3f51b5;
+	width:45%;
+}
+.printScreen .graph-line.r-orange{
+	background:#ff5722;
+	width:41%;
+}
+.printScreen .col-3 h4 span {
+    background: #1e5075 none repeat scroll 0 0;
+    display: inline-block;
+    float: right;
+    height: 1px;
+    position: relative;
+    top: 12px;
+    width: 41%;
+}
+ 
+
+.printScreen h2 {
+	font-size:30px;
+	color:#1e5075;
+	padding-bottom:10px;
+	border-bottom:solid 2px #d22d2d;
+}
+
+
+/* Selected distance markers styles ================ ================================= ======== ======== ===================*/
+
+.printScreen .col-5 {
+	width:475px;
+	float:left;
+	margin-right:130px;
+	margin-bottom:30px;
+}
+.printScreen .map-col-sm {
+	width:175px;
+	padding:5px;
+	background:#fff;
+	-webkit-box-shadow: 1px 1px 10px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 1px 10px -4px rgba(0,0,0,0.75);
+	box-shadow: 1px 1px 10px -4px rgba(0,0,0,0.75);
+	display:inline-block;
+}
+.printScreen .map-col-sm img {
+	width:100%;
+	display:block;
+	height:auto;
+}
+.printScreen .col-5 .distance-col {
+	width:260px;
+	float:right;
+
+}
+.printScreen .col-5 .distance-col ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+	vertical-align:top;
+}
+.printScreen .col-5 .distance-col ul li {
+	display:block;
+	padding-bottom:10px;
+	border-top:solid 1px #1e5075;
+}
+.printScreen .col-5 .distance-col ul li .address {
+	padding-left:10px;
+	position:relative;
+}
+.printScreen .col-5 .distance-col ul li .address::before {
+  background: rgba(0, 0, 0, 0) url("/cmnimages/sprite002.png") no-repeat scroll 0 -154px;
+    content: "";
+    height: 45px;
+    left: -5px;
+    position: absolute;
+    top: 14px;
+    width: 13px;
+}
+.printScreen .col-5.col-5-right .distance-col ul li .address::before {
+	background-position:0 -154pxpx;
+	top:5px;
+}
+.printScreen .col-5 .distance-col ul li .address p {
+	font-size:13px;
+	margin:10px 0 0;
+	font-weight:bold;	
+	line-height:15px; 
+}
+.printScreen .col-5 .distance-col ul li .address p:first-child {	
+	color:#00bff3;	
+}
+.printScreen .col-5 .distance-col ul li .address p:last-child {	
+	color:#fe5723;	
+}
+.printScreen .col-5 .distance-col ul li.d-det {
+	padding-top:5px;
+}
+.printScreen .col-5 .distance-col ul li.d-det p {
+	font-size:17px;
+	font-weight:bold;
+	color:#1d5176;
+	margin:0;
+	line-height:22px;
+}
+
+.printScreen .col-5 .distance-col ul li.d-det p span {
+	color:#14bbed;
+}
+.printScreen .col-5-right {
+	margin-right:0;
+}
+
+.printScreen .col-5.col-5-right .distance-col ul li .address p:first-child {	
+	color:#8cc34b;	
+}
+.printScreen .col-5.col-5-right .distance-col ul li .address p:last-child {	
+	color:#9b26af;	
+}
+
+
+
+/* Footer section styles ================ ================================= ======== ======== ===================*/
+
+.printScreen footer {
+	width:100%;
+	min-height:75px;
+	border-top:solid 2px #36454f;
+	padding-top:5px;
+	 
+}
+.printScreen ul.f-logos {
+	list-style:none;
+	margin:0;
+	padding:11px 0 0;
+	text-align:center;
+}
+.printScreen ul.f-logos li {
+	display:inline-block;
+	
+	background:url(/cmnimages/sprite002.png) no-repeat 0 0;
+}
+.printScreen ul.f-logos li.cn {
+	padding-right:7px;
+	width:86px;
+	height:16px;
+	background-position:0 -46px;
+	border-right:solid 1px #000000;
+}
+.printScreen ul.f-logos li.fd {
+
+	width:68px;
+	height:16px;
+	background-position:5px -86px;
+}
+.printScreen .footer-info {
+	width:1125px;
+	margin:0 auto 0;
+	font-size:9px;
+	color:#484848;
+	text-align:center;
+}
+
+/*Void Analysis page ==============================================================================================================================*/
+
+.printScreen h1 {
+	font-size:30px;
+	color:#1e5075;
+}
+.printScreen .analysis-table { margin-bottom:30px;}
+
+.printScreen .analysis-table table {
+	border-collapse: collapse;
+    width: 100%;
+}
+.printScreen td, th {
+     
+    text-align: left;
+    padding: 8px;
+}
+
+.printScreen .analysis-table table tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+.printScreen .analysis-table table th {
+	font-size:17px;
+	color:#1e5075;
+}
+
+.printScreen .analysis-table table td {
+	font-size:14px;
+}
+.printScreen .analysis-table table tr td i {
+	color:#d22d2d;
+	font-size:20px;
+	margin-right:5px;
+}
+.printScreen .title-block {
+	border-bottom:solid 2px #d22d2d;
+	margin-bottom:20px;
+}
+.printScreen .title-block .title-1 {
+	font-size:29px;
+	color:#1e5075;
+	float:left;
+	font-weight:bold;
+	margin:10px 0 10px
+}
+.printScreen .title-block .title-right {
+	font-size:25px;
+	float:right;
+	color:#1d5176;
+	margin:10px 0 10px;
+}
+.printScreen .compare-table table {
+	border-collapse: collapse;
+    width: 100%;
+}
+.printScreen .compare-table table tr td:first-child {
+	color:#000;
+	font-weight:bold;
+}
+.printScreen .compare-table table tr td:last-child {
+	color:#1e5075;
+	font-weight:normal;
+}
+.printScreen .compare-table table td.addr-col {
+	font-size:20px;
+	color:#1e5075;
+	line-height:18px;
+	font-weight:normal !important;
+}
+.printScreen .compare-table table tr th { color:#000;}
+.printScreen .compare-table table table.center-table {
+	border:solid 2px #00bff3;
+	 width:250px;
+	text-align:center;
+}
+.printScreen .compare-table table table.center-table th {
+	background:#00bff3;
+	color:#fff;
+	text-align:center;
+}
+.printScreen .compare-table.table-bottom table table.center-table th { line-height:25px;}
+.printScreen .compare-table table table.center-table td {
+	text-align:center;
+	font-size:17px;
+	font-weight:bold;
+	color:#d62d30;
+	padding:7px 8px;
+	letter-spacing:2px;
+	
+}
+.printScreen .top-margin {
+	margin-top:250px;
+}
+.printScreen .compare-table table td {
+	vertical-align:top;}
+.printScreen .compare-table table td ul {
+    
+    list-style: outside none none;
+    padding: 0 0 0 10px;
+	margin:0;
+}
+.printScreen .compare-table table td ul li {
+    clear: both;
+    color: #686868;
+    display: block;
+    font-size: 16px;
+	line-height:28px;
+}
+
+
+.printScreen .compare-table table td ul li span.left-col {
+    display: inline-block;
+    padding-right: 10px;
+    position: relative;
+    text-align: right;
+    width: 50%;
+}
+.printScreen .compare-table table td ul li .right-col {
+    float: right;
+    width: 44%;
+}
+
+.printScreen .compare-table.table-bottom table { width:100% !important;}
+.printScreen .compare-table.table-bottom table table.center-table td {	padding:3px 8px;}
+.printScreen .graph-line.block {
+	width:10px;
+	height:10px;
+	margin-right:5px;
+	top:6px;
+}
+.printScreen table.addn-tbl {	border:solid 1px #00c2f4;}
+.printScreen table.addn-tbl th {
+	font-size:14px !important;
+	background:#00c2f4;
+	text-align:center;
+	color:#fff !important;
+	text-transform:uppercase;
+
+}
+.printScreen .compare-table.table-bottom {
+	margin-bottom:40px;
+}
+.printScreen .compare-table.table-bottom table table.addn-tbl td {
+	padding:2px 5px;
+	font-size:12px;
+	color:#323232  ;
+	font-weight:bold;
+	
+}
+.printScreen .compare-table.table-bottom table table.addn-tbl tr td:first-child  {
+	text-align:right;
+	font-weight:normal;
+	color:#1e5075;
+}
+.printScreen .table-bottom table table.left-t, .table-bottom table table.right-t {
+	max-width:310px;
+}
+.printScreen .table-bottom table table.left-t tr th, 
+.printScreen .table-bottom table table.right-t tr th {
+	font-size:21px;
+	font-weight:normal;
+	color:#1e5075;
+	line-height:20px;
+}
+.printScreen .table-bottom table table.right-t {
+	float:right;
+}
+
+ 
+.printScreen .compare-table.table-bottom table table.center-table td{
+	font-size:15px;
+	padding:4px 8px;
+	line-height:20px;
+} 
+.printScreen .compare-table table table.center-table table.center-bottom-t {
+	margin-top:50px;
+}
+.printScreen .compare-table table table.center-table table.center-bottom-t tr td {
+	font-size:13px;
+	line-height:12px;
+}
+.printScreen .circle-graph {
+	width:400px;
+	height:300px;
+	margin-left:10px;
+	float:left;
+	margin-top:20px;
+}
+.printScreen .circle-graph.right-gr {
+	float:right;
+	
+}
+.printScreen .staoretrends {
+	width:88px;
+	height:15px;
+	background:url(/cmnimages/sprite002.png) no-repeat 0 -205px;
+	display:block;
+	margin:55px  auto 0;
+}
+.printScreen .graph-info {
+	text-align:center;
+	margin:0;
+}
+.printScreen .graph-info span {
+	display:block;
+	font-size:14px;
+	color:#1d5176;
+	font-weight:bold;
+
+}
+.printScreen .circle-graph .name-col {
+	font-size:17px;
+	color:#231f20;
+	text-align:center;
+	text-transform:uppercase;
+	margin:0;
+	min-height:14px;
+	letter-spacing:3px;
+}
+.printScreen .plus {
+	color:#8cc34b !important;}
+.printScreen .page-no {
+	width:1125px;
+	margin:0 auto;
+}
+.printScreen .page-no p {
+	text-align:right;
+	color:#b0b0b0;
+	line-height:30px;
+	font-size:14px;
+}
+.printScreen .addr-line {
+	color:#b0b0b0;
+	margin:0;
+	line-height:20px;
+}
+
+.ui-dialog,.ui-widget
+, .ui-widget-content {
+	background:#fff !important
+}
+
+.storeConcentration li{
+	vertical-align: top !important;
+}
+
+.chartRow {
+	width: 100%;
+	display: block;
+	clear: both;
+}
+
+@media print {
+  body * {
+    visibility:hidden;
+  }
+  .pagebreak{
+  	page-break-after:always;
+  }
+  body{
+  	background:none !important;
+    left:0px !important;
+  	top:0px !important;
+  	padding:0px !important;
+    margin:0px !important;
+  }
+  .printScreen * {
+    visibility:visible;
+  }
+  
+  div.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-draggable.ui-resizable{
+  	left:0px !important;
+  	top:0px !important;
+  	padding:0px !important;
+    margin:0px !important;
+    width:100% !important;
+  }
+  .printScreen{
+  	background:initial !important;
+  	background-color:#fff;
+  	left:0px !important;
+  	top:0px !important;
+  	padding:0px !important;
+    margin:0px !important;
+    width:100% !important;
+    
+  }
+  #wrapper-div{
+  	left:0px !important;
+  	top:0px !important;
+  	padding:0px !important;
+    margin:0px !important;
+    width: 100% !important;
+  }
+  
+  .printScreen .header-col{
+    padding:0px !important;
+    margin:0px !important;
+  }
+  
+  
+}

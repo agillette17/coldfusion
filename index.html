@@ -1,0 +1,57 @@
+<script type="text/javascript">
+	function wordLadder(beginWord, endWord, wordList) {
+		var tempWordList = wordList
+		tempWordList.push(beginWord);
+		grf = graph(tempWordList);
+		shortestPath(grf, beginWord, endWord);
+	}
+	
+	function graph(wordList) {
+	    var g = {};
+	    for (var i in wordList) {
+	        g[wordList[i]] = findNeighbours(wordList[i], wordList);
+	    }
+	    
+	    return g;
+	}
+	
+	function findNeighbours(word, wordList) {
+	    var neighbours = [];
+	    var count = 0;
+	    for (var i in wordList) {
+	        count = 0;
+	        for (var j in wordList[i].split("")) {
+	            if (wordList[i].split("")[j] != word.split("")[j]) {
+	                count++;
+	            }
+	        }
+	        if (count == 1) {
+	           neighbours.push(wordList[i]);
+	        }
+	    }
+	    
+	    return neighbours;
+	}
+	
+	function shortestPath(graph, begin, end) {
+		var settled = [begin];
+		var unsettled = []
+		var path = [];
+		for (var key in graph) {
+			unsettled.push(key);
+		}
+		unsettled.pop(begin);
+		
+		var node = begin;
+		while (unsettled != null) {
+			var successors = graph[node];
+			for (var i in successors) {
+				
+			}
+		}
+		
+		
+ 	}
+	
+	wordLadder("hit", "cog", ["hot", "dot", "dog", "lot", "log", "cog"]);
+</script>
